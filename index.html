@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Jogo da adivinhação</title>
+</head>
+<body>
+  <main>
+
+    <div class="screen1">
+      <h1>Jogo da Adivinhação</h1>
+      <p>Adivinhe o número que estou pensando, entre 0 e 10.</p>
+
+      <form action="">
+        <input id="inputNumber" type="number" min="0" max="10">
+        <button id="buttonTry">Tentar</button>
+      </form>
+      
+      <p class="notTheNumber hide">Não é o número que pensei, tente novamente!</p>
+      <p class="error hide">Inválido, digite apenas números entre 0 e 10.</p>
+    </div>
+
+    <div class="screen2 hide">
+      <h2>Acertou em 3 tentativas!</h2>
+      <button id="buttonReset">Jogar novamente</button>
+    </div>
+
+  </main>
+  <footer>Creat by @tkoch97 at Rocketseat Explorer Trail</footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

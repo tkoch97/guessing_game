@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-title: 'Montserrat', sans-serif;
+  --ff-body: 'DM Sans', sans-serif;
+
+  --fs-titleSmall: 1.7rem;
+  --fs-titleBig: 2.4rem;
+  --fs-bodySmall: 1.5rem;
+  --fs-bodyBig: 1.6rem;
+
+  --fw-title: 600;
+  --fw-subtitle: 400;
+  --fw-input: 400;
+  --fw-button: 700;
+
+  --fc-title: #34355B;
+  --fc-subtitle: #34355BCC;
+
+  --bg-body: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  --bg-main: #fff;
+  --bg-input: #DCE2E9;
+  --bg-button: #7879F1;
+}
+
+body {
+  background: var(--bg-body);
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body, input, button {
+  font-family: var(--ff-body);
+}
+
+.hide {
+  display: none
+}
+
+main {
+  background-color: #fff;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  height: fit-content;
+  /* margin-top: -10rem; */
+  border-radius: 6px;
+  box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+/* screen1 */
+
+main h1 {
+  font-family: var(--ff-title);
+  font-size: var(--fs-titleSmall);
+  font-weight: var(--fw-title);
+  color: var(--fc-title);
+  line-height: 2.4rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+main p {
+  text-align: center;
+  font-size: var(--fs-bodySmall);
+  font-weight: var(--fw-subtitle);
+  color: var(--fc-subtitle);
+  line-height: 1.5rem;
+  margin-bottom: 4.8rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  padding: 1.6rem;
+}
+
+input {
+  background-color: var(--bg-input);
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  width: 7.0rem;
+  height: 5.3rem;
+
+  color: var(--fc-title);
+  font-size: var(--fs-bodySmall);
+}
+
+button {
+  background-color: var(--bg-button);
+  border: none;
+  border-radius: 0rem .4rem .4rem 0rem;
+  width: fit-content;
+  height: 5.3rem;
+
+  color: var(--bg-main);
+  font-weight: var(--fw-button);
+  font-size: var(--fs-bodySmall);
+  line-height: 2.0rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+button:hover {
+  background-color: #5e5eee;
+}
+
+button:focus {
+  outline: 2px solid #aecdff;   
+}
+
+.notTheNumber {
+  margin-top: 4.0rem;
+  color: red;
+  margin-bottom: 0;
+}
+
+.error {
+  margin-top: 4.0rem;
+  color: red;
+  margin-bottom: 0;
+}
+
+/* screen2 */
+.screen2 button {
+  border-radius: .4rem .4rem .4rem .4rem;
+}
+
+.screen2 h2 {
+  font-size: var(--fs-titleBig);
+  font-weight: var(--fw-subtitle);
+  color: var(--fc-title);
+  margin-bottom: 3.3rem;
+}
+
+footer {
+  color: #5e5eee;
+  font-family: var(--ff-title);
+  display: flex;
+}
